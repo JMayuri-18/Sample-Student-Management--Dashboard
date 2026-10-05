@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Edit Student | Student Management System</title><link rel="stylesheet" href="../css/style.css"></head>
+<body><main class="main"><div class="topbar"><h1>Edit Student</h1><span class="user"></span></div>
+<div class="panel"><div id="msg" class="msg"></div>
+<form id="editForm"><div class="row">
+<div><label>Roll No</label><input id="id" readonly></div><div><label>Full Name</label><input id="name" required></div>
+<div><label>Class</label><input id="cls" required></div>
+<div><label>Gender</label><select id="gender"><option>Male</option><option>Female</option><option>Other</option></select></div>
+<div><label>Email</label><input id="email" type="email" required></div><div><label>Phone</label><input id="phone" pattern="[0-9]{10}" required></div></div>
+<button class="btn">Update</button> <a class="btn gray" href="add-student.html">Cancel</a></form></div></main>
+<script src="../js/auth.js"></script><script src="../js/edit-student.js"></script></body></html>

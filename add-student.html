@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Students | Student Management System</title><link rel="stylesheet" href="../css/style.css"></head>
+<body><main class="main"><div class="topbar"><h1>Students</h1><span class="user"></span></div>
+<div class="panel"><h3>Add New Student</h3><div id="msg" class="msg"></div>
+<form id="studentForm"><div class="row">
+<div><label>Roll No</label><input id="id" required></div><div><label>Full Name</label><input id="name" required></div>
+<div><label>Class</label><input id="cls" placeholder="e.g. 10-A" required></div>
+<div><label>Gender</label><select id="gender"><option>Male</option><option>Female</option><option>Other</option></select></div>
+<div><label>Email</label><input id="email" type="email" required></div><div><label>Phone</label><input id="phone" pattern="[0-9]{10}" title="10 digit number" required></div></div>
+<button class="btn">Add Student</button></form></div>
+<div class="panel"><h3>Student List</h3><div class="toolbar"><input id="search" placeholder="Search by name, roll no, class"></div>
+<table><thead><tr><th>Roll No</th><th>Name</th><th>Class</th><th>Gender</th><th>Phone</th><th>Actions</th></tr></thead><tbody id="tbody"></tbody></table></div></main>
+<div class="modal" id="profileModal"><div class="box" id="profileBody"></div></div>
+<script src="../js/auth.js"></script><script src="../js/student-profile.js"></script><script src="../js/students.js"></script></body></html>
